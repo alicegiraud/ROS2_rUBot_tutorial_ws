@@ -14,7 +14,7 @@ class MoveTurtle(Node):
 
     def pose_callback(self, msg):
         self.current_pose = msg
-        if msg.x > 17.0 or msg.y > 17.0:
+        if msg.x > 7.0 or msg.y > 7.0:
             self.get_logger().info("Boundary reached → stopping turtle")
             self.stop = True
 
